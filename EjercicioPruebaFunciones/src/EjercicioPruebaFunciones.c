@@ -6,7 +6,8 @@
  ============================================================================
 */
 
-// Pedir dos notas y mostrar el promedio
+/* Pedir dos notas y mostrar el promedio
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
