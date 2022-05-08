@@ -17,19 +17,16 @@ int pedirDatoNumericoInt();
 
 int main(void) {
 	setbuf(stdout, NULL);
-	int notaUno;
-	int notaDos;
+	int numeroUno;
+	int numeroDos;
 	float promedioDeNota;
 
-	notaUno = pedirDatoNumericoInt();
-	notaDos = pedirDatoNumericoInt();
+	numeroUno = pedirDatoNumericoInt();
+	numeroDos = pedirDatoNumericoInt();
 
-	promedioDeNota = calculaPromedioDeDosEnteros(notaUno,notaDos);
-	if(promedioDeNota <= 4){
-		printf("Te fue mal");
-	}else{
-		printf("Tu promedio es: %.2f", promedioDeNota);
-	}
+	promedioDeNota = calculaPromedioDeDosEnteros(numeroUno,numeroDos);
+
+	printf("Tu promedio es: %.2f", promedioDeNota);
 
 	return 0;
 }
